@@ -1,4 +1,5 @@
 ﻿
+using DLWMS.WinForms.IB200262;
 using System;
 using System.Windows.Forms;
 
@@ -14,7 +15,7 @@ namespace DLWMS.WinForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Form stratnaForma = new frmGlavna();
+            Form stratnaForma = new frmPretragaIB200262();
             Application.Run(stratnaForma);
         }
     }
