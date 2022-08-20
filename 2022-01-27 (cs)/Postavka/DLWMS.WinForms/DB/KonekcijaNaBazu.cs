@@ -1,4 +1,5 @@
 ﻿
+using DLWMS.WinForms.IB200262.DB;
 using System.Data.Entity;
 
 namespace DLWMS.WinForms.DB
@@ -18,6 +19,9 @@ namespace DLWMS.WinForms.DB
             modelBuilder.Entity<Student>().ToTable("Studenti");                      
         }       
         public DbSet<Student> Studenti { get; set; }
-       
+        public DbSet<Predmet> Predmeti { get; set; }
+        public DbSet<StudentPredmet> StudentiPredmeti{ get; set; }
+        public DbSet<StudentSlika> StudentiSlike { get; set; }
+
     }
 }
