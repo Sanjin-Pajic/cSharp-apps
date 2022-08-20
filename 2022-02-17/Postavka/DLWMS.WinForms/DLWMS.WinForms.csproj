@@ -97,6 +97,20 @@
     <Compile Include="Helpers\Validator.cs" />
     <Compile Include="Helpers\Poruke.cs" />
     <Compile Include="DB\Student.cs" />
+    <Compile Include="IB200262\DB\frmNovaKonsultacijaIB200262.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IB200262\DB\frmNovaKonsultacijaIB200262.Designer.cs">
+      <DependentUpon>frmNovaKonsultacijaIB200262.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IB200262\DB\Predmet.cs" />
+    <Compile Include="IB200262\DB\StudentKonsultacija.cs" />
+    <Compile Include="IB200262\frmKonsultacijeIB200262.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IB200262\frmKonsultacijeIB200262.Designer.cs">
+      <DependentUpon>frmKonsultacijeIB200262.cs</DependentUpon>
+    </Compile>
     <Compile Include="IB200262\frmPretragaIB200262.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +127,12 @@
     </Compile>
     <EmbeddedResource Include="frmGlavna.resx">
       <DependentUpon>frmGlavna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IB200262\DB\frmNovaKonsultacijaIB200262.resx">
+      <DependentUpon>frmNovaKonsultacijaIB200262.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IB200262\frmKonsultacijeIB200262.resx">
+      <DependentUpon>frmKonsultacijeIB200262.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IB200262\frmPretragaIB200262.resx">
       <DependentUpon>frmPretragaIB200262.cs</DependentUpon>

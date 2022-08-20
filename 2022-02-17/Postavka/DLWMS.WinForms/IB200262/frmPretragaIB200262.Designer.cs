@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.ImePrezime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GodinaStudija = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Prosjek = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Konsultacije = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,6 +58,42 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1289, 409);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // ImePrezime
+            // 
+            this.ImePrezime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ImePrezime.DataPropertyName = "ImePrezime";
+            this.ImePrezime.HeaderText = "Ime i prezime";
+            this.ImePrezime.MinimumWidth = 6;
+            this.ImePrezime.Name = "ImePrezime";
+            this.ImePrezime.ReadOnly = true;
+            // 
+            // GodinaStudija
+            // 
+            this.GodinaStudija.DataPropertyName = "GodinaStudija";
+            this.GodinaStudija.HeaderText = "Godina studija";
+            this.GodinaStudija.MinimumWidth = 6;
+            this.GodinaStudija.Name = "GodinaStudija";
+            this.GodinaStudija.ReadOnly = true;
+            this.GodinaStudija.Width = 125;
+            // 
+            // Prosjek
+            // 
+            this.Prosjek.DataPropertyName = "Prosjek";
+            this.Prosjek.HeaderText = "Prosjek";
+            this.Prosjek.MinimumWidth = 6;
+            this.Prosjek.Name = "Prosjek";
+            this.Prosjek.ReadOnly = true;
+            this.Prosjek.Width = 125;
+            // 
+            // Konsultacije
+            // 
+            this.Konsultacije.HeaderText = "Konsultacije";
+            this.Konsultacije.MinimumWidth = 6;
+            this.Konsultacije.Name = "Konsultacije";
+            this.Konsultacije.ReadOnly = true;
+            this.Konsultacije.Width = 125;
             // 
             // label1
             // 
@@ -99,41 +135,6 @@
             this.comboBox1.Size = new System.Drawing.Size(365, 24);
             this.comboBox1.TabIndex = 4;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // ImePrezime
-            // 
-            this.ImePrezime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ImePrezime.DataPropertyName = "ImePrezime";
-            this.ImePrezime.HeaderText = "Ime i prezime";
-            this.ImePrezime.MinimumWidth = 6;
-            this.ImePrezime.Name = "ImePrezime";
-            this.ImePrezime.ReadOnly = true;
-            // 
-            // GodinaStudija
-            // 
-            this.GodinaStudija.DataPropertyName = "GodinaStudija";
-            this.GodinaStudija.HeaderText = "Godina studija";
-            this.GodinaStudija.MinimumWidth = 6;
-            this.GodinaStudija.Name = "GodinaStudija";
-            this.GodinaStudija.ReadOnly = true;
-            this.GodinaStudija.Width = 125;
-            // 
-            // Prosjek
-            // 
-            this.Prosjek.DataPropertyName = "Prosjek";
-            this.Prosjek.HeaderText = "Prosjek";
-            this.Prosjek.MinimumWidth = 6;
-            this.Prosjek.Name = "Prosjek";
-            this.Prosjek.ReadOnly = true;
-            this.Prosjek.Width = 125;
-            // 
-            // Konsultacije
-            // 
-            this.Konsultacije.HeaderText = "Konsultacije";
-            this.Konsultacije.MinimumWidth = 6;
-            this.Konsultacije.Name = "Konsultacije";
-            this.Konsultacije.ReadOnly = true;
-            this.Konsultacije.Width = 125;
             // 
             // frmPretragaIB200262
             // 

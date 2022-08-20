@@ -48,5 +48,12 @@ namespace DLWMS.WinForms.IB200262
         {
             Filtriraj();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 3) {
+                var student = dataGridView1.SelectedRows[0].DataBoundItem as Student;
+                var novaForma = new frmKonsultacijeIB200262(student).ShowDialog(); }
+        }
     }
 }
