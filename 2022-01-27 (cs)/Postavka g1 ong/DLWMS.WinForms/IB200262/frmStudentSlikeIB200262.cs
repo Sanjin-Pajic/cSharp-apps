@@ -23,7 +23,10 @@ namespace DLWMS.WinForms.IB200262
         }
 
         private void frmStudentSlikeIB200262_Load(object sender, EventArgs e)
-        {   
+        {
+            var listaSlika = DLWMSdb.Baza.StudentiSlike.Where(x => _student.Id == x.Id).ToList();
+            pictureBox1.Image = ImageHelper.FromByteToImage(listaSlika[0].Slika);
+            label3.Text = "Slika " + listaSlika.Count() + "/" + listaSlika.Count();
         }
     }
 }
